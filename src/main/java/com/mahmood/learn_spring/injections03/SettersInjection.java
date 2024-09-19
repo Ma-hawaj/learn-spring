@@ -1,4 +1,4 @@
-package com.mahmood.learn_spring.injections;
+package com.mahmood.learn_spring.injections03;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
