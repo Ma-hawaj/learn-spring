@@ -8,6 +8,7 @@ import java.util.Arrays;
 @Component
 public class BusinessCalculationService {
 
+    // @Autowired can be replaced with @Inject
     @Autowired
     DataService myData;
 

@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+// @Component can be replaced with @Named
 @Component
 @Scope(value= ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 // this annotation set the scope of the bean as prototype which
