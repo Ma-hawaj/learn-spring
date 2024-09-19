@@ -4,8 +4,10 @@ import jakarta.annotation.PreDestroy;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+//@Component
+@Repository // for class that interact with the database
 @Primary
 @Lazy // Lazy annotations initializes the class just when it being used
 public class MongoDBDataService implements DataService{
