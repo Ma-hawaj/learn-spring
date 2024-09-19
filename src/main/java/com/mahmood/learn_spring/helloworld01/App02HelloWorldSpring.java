@@ -1,4 +1,4 @@
-package com.mahmood.learn_spring;
+package com.mahmood.learn_spring.helloworld01;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

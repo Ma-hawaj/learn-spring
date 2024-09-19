@@ -1,4 +1,4 @@
-package com.mahmood.learn_spring.game;
+package com.mahmood.learn_spring.gamingapp02.game;
 
 public class MarioGame implements GameConsole {
     public void up(){

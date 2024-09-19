@@ -1,4 +1,4 @@
-package com.mahmood.learn_spring.game;
+package com.mahmood.learn_spring.gamingapp02.game;
 
 public class GameRunner {
     private final GameConsole game;

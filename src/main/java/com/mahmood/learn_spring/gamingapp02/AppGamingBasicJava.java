@@ -1,7 +1,7 @@
-package com.mahmood.learn_spring;
+package com.mahmood.learn_spring.gamingapp02;
 
-import com.mahmood.learn_spring.game.GameRunner;
-import com.mahmood.learn_spring.game.MarioGame;
+import com.mahmood.learn_spring.gamingapp02.game.GameRunner;
+import com.mahmood.learn_spring.gamingapp02.game.MarioGame;
 
 public class AppGamingBasicJava {
     public static void main(String[] args) {
