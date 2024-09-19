@@ -7,12 +7,32 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 @Component
-class Business {
-    @Autowired
+class BusinessS {
     Dep1 dep1;
-
-    @Autowired
     Dep2 dep2;
+
+    // this is constructor injection
+    // this is the recommended method
+    @Autowired
+    public BusinessS(Dep1 dep1, Dep2 dep2){
+        super();
+        this.dep1 = dep1;
+        this.dep2 = dep2;
+    }
+
+    /*
+     * The following is setters injection
+     * note that @Autowired is not mandatory
+     */
+//    @Autowired
+//    public void setDep1(Dep1 dep){
+//        this.dep1 = dep;
+//    }
+//
+//    @Autowired
+//    public void setDep2(Dep2 dep){
+//        this.dep2 = dep;
+//    }
 
     public String toString(){
         return "Using " + dep1 + " and " + dep2;
@@ -20,26 +40,26 @@ class Business {
 }
 
 @Component
-class Dep1{
+class DepS1{
 
 }
 
 @Component
-class Dep2{
+class DepS2{
 
 }
 
 @Configuration
 @ComponentScan
-public class FieldInjection  {
+public class SettersInjection  {
     public static void main(String[] args) {
 
         try(var context =
                     new AnnotationConfigApplicationContext
-                            (FieldInjection.class)){
+                            (SettersInjection.class)){
 
 
-            System.out.println(context.getBean(Business.class));
+            System.out.println(context.getBean(BusinessS.class));
 
         }
     }
