@@ -1,20 +1,24 @@
-package com.mahmood.learn_jpa_hibernate.course.jdbc;
+package com.mahmood.learn_jpa_hibernate.course;
 
-import com.mahmood.learn_jpa_hibernate.course.Course;
+import com.mahmood.learn_jpa_hibernate.course.jdbc.CourseJdbcRepository;
+import com.mahmood.learn_jpa_hibernate.course.jpa.CourseJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CourseJdbcCommandLineRunner implements CommandLineRunner {
+public class CourseCommandLineRunner implements CommandLineRunner {
+
+//    @Autowired
+//    private CourseJdbcRepository myRepo;
 
     @Autowired
-    private CourseJdbcRepository myRepo;
+    private CourseJpaRepository myRepo;
 
     @Override
     public void run(String... args) throws Exception {
         myRepo.insert(new Course(1, "Learn AWS", "Mahmood"));
-        myRepo.insert(new Course(2, "Learn K8", "Mahmood"));
+        myRepo.insert(new Course(2, "Learn K8", "Mahmood JPA"));
         myRepo.insert(new Course(3, "Learn DevOps", "Mahmood"));
 
         myRepo.deleteById(1);
