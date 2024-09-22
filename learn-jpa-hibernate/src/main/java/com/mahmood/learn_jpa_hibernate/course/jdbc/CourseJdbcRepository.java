@@ -12,12 +12,21 @@ public class CourseJdbcRepository {
     private static final String INSERT_QUERY =
             """
             insert into course(id, name, author)
-            values(1, 'Learn AWS', 'Mahmood');
+            values(?, ?, ?);
             """;
 
-    public void insert(){
-        System.out.println("I'm being executed");
-        springJdbcTemplate.update(INSERT_QUERY);
+    private static final String DELETE_QUERY =
+            """
+            delete from course
+            where id = ?
+            """;
+
+    public void insert(Course course){
+        springJdbcTemplate.update(INSERT_QUERY, course.getId(), course.getName(), course.getAuthor());
+    }
+
+    public void deleteById(long id){
+        springJdbcTemplate.update(DELETE_QUERY, id);
     }
 
 }
