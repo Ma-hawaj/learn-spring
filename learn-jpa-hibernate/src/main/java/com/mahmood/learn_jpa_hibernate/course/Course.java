@@ -1,8 +1,20 @@
-package com.mahmood.learn_jpa_hibernate.course.jdbc;
+package com.mahmood.learn_jpa_hibernate.course;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+// you can map to a table here
+@Entity
 public class Course {
+
+    @Id
     private long id;
+
+    @Column(name="name") // these are not mandatory since it's the same name
     private String name;
+
+    @Column(name="author")
     private String author;
 
     public Course(){
