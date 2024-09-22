@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="103b7244-a6b3-45f1-95fc-b6ad93caea38" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/BusinessCalculation04/BusinessCalculation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/BusinessCalculation04/BusinessCalculationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/BusinessCalculation04/DataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/BusinessCalculation04/MongoDBDataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/BusinessCalculation04/MySQLDataService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/LearnSpringApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/LearnSpringApplication.java:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/gamingapp02/AppGaming.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/gamingapp02/game/GameConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/gamingapp02/game/GameRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/gamingapp02/game/MarioGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/gamingapp02/game/PacmanGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/helloworld01/App02HelloWorldSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/helloworld01/HelloWorldSpringConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/injections03/FieldInjection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/injections03/SettersInjection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/springBootHello05/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/springBootHello05/CourseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/springBootHello05/CurrencyConfigurationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/springBootHello05/CurrencyServiceConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mahmood/learn_spring/springBootHello05/SpringBootHello05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mahmood/learn_spring/LearnSpringApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mahmood/learn_spring/LearnSpringApplicationTests.java:Zone.Identifier" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2mFEVpVQBJSS87xLI40Rp257nt7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App02HelloWorldSpring.executor": "Run",
+    "Application.AppGaming.executor": "Run",
+    "Application.AppGamingBasicJava.executor": "Run",
+    "Application.BusinessCalculation.executor": "Run",
+    "Application.BusinessCalculationService.executor": "Run",
+    "Application.FieldInjection.executor": "Run",
+    "Application.SpringBootHello05.executor": "Run",
+    "Application.springBootHello05.executor": "Run",
+    "Maven.learn-spring [validate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "//wsl.localhost/ubuntu/home/mahmood/learn-spring/learn-jpa-hibernate",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.tools"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.mahmood.learn_spring.springBootHello05" />
+      <recent name="com.mahmood.learn_spring.game" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\ubuntu\home\mahmood\learn-spring\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\ubuntu\home\mahmood\learn-spring\learn-spring" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mahmood.learn_spring.gamingapp02.game" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn validate" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SpringBootHello05">
+    <configuration name="App02HelloWorldSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mahmood.learn_spring.helloworld01.App02HelloWorldSpring" />
+      <module name="learn-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mahmood.learn_spring.helloworld01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppGaming" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mahmood.learn_spring.gamingapp02.AppGaming" />
+      <module name="learn-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mahmood.learn_spring.gamingapp02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BusinessCalculation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mahmood.learn_spring.BusinessCalculation04.BusinessCalculation" />
+      <module name="learn-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mahmood.learn_spring.BusinessCalculation04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FieldInjection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mahmood.learn_spring.injections03.FieldInjection" />
+      <module name="learn-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mahmood.learn_spring.injections03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootHello05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mahmood.learn_spring.springBootHello05.SpringBootHello05" />
+      <module name="learn-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mahmood.learn_spring.springBootHello05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringBootHello05" />
+        <item itemvalue="Application.BusinessCalculation" />
+        <item itemvalue="Application.FieldInjection" />
+        <item itemvalue="Application.AppGaming" />
+        <item itemvalue="Application.App02HelloWorldSpring" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="103b7244-a6b3-45f1-95fc-b6ad93caea38" name="Changes" comment="" />
+      <created>1726663950218</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726663950218</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/learn_spring$SpringBootHello05.ic" NAME="SpringBootHello05 Coverage Results" MODIFIED="1726991969261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.mahmood.learn_spring.springBootHello05.*</FILTER>
+    </SUITE>
+  </component>
+</project>
