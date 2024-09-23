@@ -12,6 +12,8 @@ public class UserDaoService {
 
     private static final List<User> users = new ArrayList<>();
 
+    private static int usersCount = 3;
+
     static {
         users.add(new User(1, "Adam", LocalDate.now().minusYears(25)));
         users.add(new User(2, "Mahmood", LocalDate.now().minusYears(25)));
@@ -22,8 +24,10 @@ public class UserDaoService {
         return users;
     }
 
-    public void save(User user){
+    public User save(User user){
+        user.setId(++usersCount);
         users.add(user);
+        return user;
     }
 
     public User findOne(int id) {
