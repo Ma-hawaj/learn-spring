@@ -2,6 +2,7 @@ package com.mahmood.firstrestapi.socialmediaapi;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
 
 @Entity(name="Posts")
 public class Post {
@@ -10,6 +11,7 @@ public class Post {
     @GeneratedValue
     private Integer id;
 
+    @Size(min = 10)
     private String descreption;
 
     // this will not fetch the user by default
@@ -19,6 +21,14 @@ public class Post {
 
     public Integer getId() {
         return id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public void setId(Integer id) {

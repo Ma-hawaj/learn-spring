@@ -17,8 +17,11 @@ public class UserController {
 
     private final UserDaoService UserService;
 
-    public UserController(UserDaoService service){
+    private final PostRepository postRepo;
+
+    public UserController(UserDaoService service, PostRepository postRepo){
         this.UserService = service;
+        this.postRepo = postRepo;
     }
 
     @GetMapping(path = "/users")
@@ -77,6 +80,26 @@ public class UserController {
             throw new UserNotFoundException("id: "+id);
 
         return user.get().getPosts();
+    }
+
+    @PostMapping(path = "/users/{id}/posts")
+    public ResponseEntity<Post> addPost(@PathVariable int id,@Valid @RequestBody Post post){
+
+        Optional<User> user = UserService.findById(id);
+        if(user.isEmpty())
+            throw new UserNotFoundException("id: "+id);
+
+        post.setUser(user.get());
+
+        Post newPost = postRepo.save(post);
+
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}/")
+                .buildAndExpand(newPost.getId())
+                .toUri();
+
+        return ResponseEntity.created(location).build();
     }
 
 
