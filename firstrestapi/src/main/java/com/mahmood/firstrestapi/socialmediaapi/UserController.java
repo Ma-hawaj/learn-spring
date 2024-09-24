@@ -1,5 +1,6 @@
 package com.mahmood.firstrestapi.socialmediaapi;
 
+import com.mahmood.firstrestapi.exception.UserNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
