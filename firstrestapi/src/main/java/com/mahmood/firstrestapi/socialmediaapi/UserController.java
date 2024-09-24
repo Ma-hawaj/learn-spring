@@ -15,22 +15,22 @@ import java.util.Optional;
 @RestController
 public class UserController {
 
-    private final UserDaoService myService;
+    private final UserDaoService UserService;
 
     public UserController(UserDaoService service){
-        this.myService = service;
+        this.UserService = service;
     }
 
     @GetMapping(path = "/users")
     public List<User> retrieveAllUsers(){
-        return myService.findAll();
+        return UserService.findAll();
     }
 
 
     @GetMapping(path = "/users/{id}")
     public EntityModel<User> retrieveUser(@PathVariable int id){
 //        User user = myService.findOne(id);
-        Optional<User> user = myService.findById(id);
+        Optional<User> user = UserService.findById(id);
 //        if(user == null){
 //            throw new UserNotFoundException("id: " + id);
 //        }
@@ -52,7 +52,7 @@ public class UserController {
 
     @PostMapping(path = "/users")
     public ResponseEntity<User> createUser(@Valid @RequestBody User user){
-        User newUser = myService.save(user);
+        User newUser = UserService.save(user);
 
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest()
@@ -66,7 +66,17 @@ public class UserController {
 
     @DeleteMapping(path = "/users/{id}")
     public void deleteUser(@PathVariable int id){
-        myService.deleteById(id);
+        UserService.deleteById(id);
+    }
+
+    @GetMapping(path = "/users/{id}/posts")
+    public List<Post> retrievePostsForUser(@PathVariable int id){
+
+        Optional<User> user = UserService.findById(id);
+        if(user.isEmpty())
+            throw new UserNotFoundException("id: "+id);
+
+        return user.get().getPosts();
     }
 
 
