@@ -1,5 +1,6 @@
 package com.mahmood.firstrestapi.socialmediaapi;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,7 @@ public class User {
     private Integer id;
 
     @Size(min=2, message = "Name should have at least 2 chars")
+    @JsonProperty("usr_name") // this will override name in the output json
     private String name;
 
     @Past(message = "Date should be in the past")
