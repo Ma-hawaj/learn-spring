@@ -2,6 +2,8 @@ package com.mahmood.firstrestapi.socialmediaapi;
 
 import com.mahmood.firstrestapi.exception.UserNotFoundException;
 import jakarta.validation.Valid;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -23,14 +25,22 @@ public class UserController {
         return myService.findAll();
     }
 
+
     @GetMapping(path = "/users/{id}")
-    public User retrieveUser(@PathVariable int id){
+    public EntityModel<User> retrieveUser(@PathVariable int id){
         User user = myService.findOne(id);
         if(user == null){
             throw new UserNotFoundException("id: " + id);
         }
 
-        return user;
+        // this will add the retrieveAllUsers link to the _links
+        EntityModel<User> entity = EntityModel.of(user);
+        WebMvcLinkBuilder link = WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(
+                this.getClass()).retrieveAllUsers()
+        );
+        entity.add(link.withRel("all-users"));
+
+        return entity;
     }
 
     @PostMapping(path = "/users")
