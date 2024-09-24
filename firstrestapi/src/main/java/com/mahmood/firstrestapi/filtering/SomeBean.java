@@ -1,13 +1,15 @@
 package com.mahmood.firstrestapi.filtering;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 //@JsonIgnoreProperties({"field1","field2"}) // this can be used also
+@JsonFilter("someFilter")
 public class SomeBean {
     private String field1;
 
-    @JsonIgnore // this will not be returned in the response
+//    @JsonIgnore // this will not be returned in the response
     private String field2;
     private String field3;
 
