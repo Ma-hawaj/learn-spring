@@ -10,6 +10,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class UserController {
@@ -28,13 +29,19 @@ public class UserController {
 
     @GetMapping(path = "/users/{id}")
     public EntityModel<User> retrieveUser(@PathVariable int id){
-        User user = myService.findOne(id);
-        if(user == null){
+//        User user = myService.findOne(id);
+        Optional<User> user = myService.findById(id);
+//        if(user == null){
+//            throw new UserNotFoundException("id: " + id);
+//        }
+
+        if(user.isEmpty()){
             throw new UserNotFoundException("id: " + id);
         }
 
         // this will add the retrieveAllUsers link to the _links
-        EntityModel<User> entity = EntityModel.of(user);
+//        EntityModel<User> entity = EntityModel.of(user);
+        EntityModel<User> entity = EntityModel.of(user.get());
         WebMvcLinkBuilder link = WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(
                 this.getClass()).retrieveAllUsers()
         );
