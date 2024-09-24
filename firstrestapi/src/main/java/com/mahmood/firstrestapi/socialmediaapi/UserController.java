@@ -1,6 +1,7 @@
 package com.mahmood.firstrestapi.socialmediaapi;
 
 import com.mahmood.firstrestapi.exception.UserNotFoundException;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -33,7 +34,7 @@ public class UserController {
     }
 
     @PostMapping(path = "/users")
-    public ResponseEntity<User> createUser(@RequestBody User user){
+    public ResponseEntity<User> createUser(@Valid @RequestBody User user){
         User newUser = myService.save(user);
 
         URI location = ServletUriComponentsBuilder
