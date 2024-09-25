@@ -1,5 +1,9 @@
 package com.mahmood.spring_Aop.business;
 
+
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class DataService1 {
 
     public int[] retrieveData(){
