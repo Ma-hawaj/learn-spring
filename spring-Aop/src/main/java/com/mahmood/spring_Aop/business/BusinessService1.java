@@ -8,8 +8,12 @@ import java.util.Arrays;
 @Service
 public class BusinessService1 {
 
-    @Autowired
-    private DataService1 dataService1;
+    private final DataService1 dataService1;
+
+
+    public BusinessService1(DataService1 dataService1) {
+        this.dataService1 = dataService1;
+    }
 
     public int calculateMax(){
         int[] data = dataService1.retrieveData();
