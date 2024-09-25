@@ -13,7 +13,7 @@ public class PerformanceAspect {
 
     Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Around("execution(* com.mahmood.spring_Aop.business.*.*(..))")
+    @Around("com.mahmood.spring_Aop.aopAspects.CommonPointcutConfig.businessPackageConfig()")
     public Object findExecutionTime(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         long startSysTime = System.currentTimeMillis();
 
