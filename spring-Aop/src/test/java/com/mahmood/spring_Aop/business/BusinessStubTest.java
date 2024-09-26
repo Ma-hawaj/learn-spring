@@ -1,10 +1,9 @@
 package com.mahmood.spring_Aop.business;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BusinessImplTest {
+public class BusinessStubTest {
 
     @Test
     void test(){
