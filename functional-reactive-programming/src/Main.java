@@ -9,8 +9,8 @@ public class Main {
         //predefined functional interfaces
         new predefinedInterfaces();
 
-
-
+        //method and constructor reference
+        new methodAndConstructorReference();
 
 
     }
