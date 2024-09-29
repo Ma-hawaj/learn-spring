@@ -12,6 +12,10 @@ public class Main {
         //method and constructor reference
         new methodAndConstructorReference();
 
+        //Optional class
+        new OptionalExamples();
+
+
 
     }
 }
