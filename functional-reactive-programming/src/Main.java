@@ -20,5 +20,8 @@ public class Main {
 
         //Composition
         new ComposeExample();
+
+        //Currying
+        new CurryingExample();
     }
 }
