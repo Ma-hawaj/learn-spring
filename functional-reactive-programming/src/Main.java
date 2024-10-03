@@ -15,7 +15,8 @@ public class Main {
         //Optional class
         new OptionalExamples();
 
-
+        //Chaining
+        new ChainingExample();
 
     }
 }
