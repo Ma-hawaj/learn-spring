@@ -18,5 +18,7 @@ public class Main {
         //Chaining
         new ChainingExample();
 
+        //Composition
+        new ComposeExample();
     }
 }
