@@ -23,5 +23,8 @@ public class Main {
 
         //Currying
         new CurryingExample();
+
+        //Streams
+        new StreamsExample();
     }
 }
